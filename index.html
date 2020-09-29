@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>New words</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nova palavra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-container">
+        <section id="add-word">
+            <form action="">
+                <label for="n-word">Nova palavra</label>
+                <input type="text" name="n-word" id="n-word">
+                <label for="examples">Exemplos</label>
+                <textarea name="examplaes" id="examples" cols="30" rows="10"></textarea>
+                <label for="img">Link da imagem</label>
+                <input type="url" name="img" id="img">
+            </form>
+            <button class="btn">Salvar</button>
+        </section>
+
+        <section id="new-words">
+            <div class="word">
+                    <a href="https://images-na.ssl-images-amazon.com/images/I/41ukg-UjvbL._AC_UL600_SR435,600_.jpg" target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/41ukg-UjvbL._AC_UL600_SR435,600_.jpg" alt=""></a>
+                    <div class="content">
+                        <h3>Stuck</h3>
+                        <h4>Example</h4>
+                        <p>She might get <span class="today-word">stuck</span> in traffic...</p>
+                        <p>I was <span class="today-word">stuck</span> at the airport</p>
+                        <p>Translate: preso, emperrado</p>
+                    </div>
+            </div>
+
+            <div class="word">
+                <a href="https://images-na.ssl-images-amazon.com/images/I/41ukg-UjvbL._AC_UL600_SR435,600_.jpg" target="_blank"><img src="https://as2.ftcdn.net/jpg/00/85/80/37/500_F_85803787_dVvfpC5esUQwQBaEK9rgRQN2FSAKTEfx.jpg" alt=""></a>
+                <div class="content">
+                    <h3>Road</h3>
+                    <p>We'll cross the road up ahead at the crosswalk</p>
+                    <p>Translate: estrada</p>
+                </div>
+            </div>
+
+            <div class="word">
+                <a href="https://images-na.ssl-images-amazon.com/images/I/41ukg-UjvbL._AC_UL600_SR435,600_.jpg" target="_blank"><img src="https://as1.ftcdn.net/jpg/02/15/15/84/500_F_215158490_VY87Po4zXkebxUeSEK7cHD3dAhPeLBJh.jpg" alt=""></a>
+                <div class="content">
+                    <h3>Happen</h3>
+                    <p> A lot had happened in the last few months</p>
+                    <p>Tranlate: Acontecer</p>
+                </div>
+            </div>
+
+    </section>
+    </div>
+</body>
+</html>
