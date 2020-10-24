@@ -1,0 +1,42 @@
+<header id="header">
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Nova palavra</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="main-container">
+    <section id="add-word">
+        <form action="/cad" method="POST">
+            <label for="n-word">New word: </label>
+            <input type="text" name="new" id="n-word">
+            <label for="examples">Phrase: </label>
+            <input name="phrase" id="examples"></input>
+            <label for="translate">Translate: </label>
+            <input type="text" name="translate" id="translate">
+            <label for="img">Image link</label>
+            <input type="url" name="link" id="img">
+            <button type="submit" class="btn">Salvar</button>
+        </form>
+    </section>
+ <section id="new-words">
+    {{#each posts}}
+        <div class="word">
+            <a href="{{dataValues.link}}" target="_blank">
+                <img src="{{dataValues.link}}" alt="">
+            </a>
+            <div class="content">
+                <h2>{{dataValues.new}}</h2>
+                
+                <h3>Phrase:</h3>
+                <p>{{dataValues.phrase}}</p>
+                
+                <h3>Translate: </h3>
+                <p>{{dataValues.translate}}</p>
+            </div>
+        </div>
+    {{/each}}
+</section>
+</div>

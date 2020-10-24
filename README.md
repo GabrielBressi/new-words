@@ -1,2 +1,2 @@
 # new-words
- Salvar palavras no estudo da lingua inglêsa
+ Salvar palavras no estudo da lingua inglesa
