@@ -3,6 +3,7 @@ const app = express()
 const handlebars = require('express-handlebars')
 const bodyParser = require('body-parser')
 const Post = require('./models/Post')
+const path = require('path')
 
 
     // Body Parser 
@@ -12,7 +13,11 @@ const Post = require('./models/Post')
     //Template Engine
         app.engine('handlebars', handlebars({defaultLayout : 'main'}))
         app.set('view engine', 'handlebars')
-
+    
+    // Public 
+        app.use(express.static(path.join(__dirname, 'public')))
+    
+    
     // Rotas 
         app.get('/', function(req, res){
             Post.findAll().then(function(posts){
